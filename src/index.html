@@ -9,28 +9,35 @@
   <link href="./output.css" rel="stylesheet">
   <link href="./input.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#090b1a]">
   <main class="bg-[#090b1a] w-screen h-screen flex flex-row flex-nowrap justify-center items-center"> 
-    <section class="bg-white h-[500px] w-[250px] rounded-[5px] overflow-hidden">
+    <section class="bg-white h-[750px] w-[250px] rounded-[5px] overflow-hidden lg:w-[90vw] lg:h-[500px]">
 
-      <div id="imagem" class="h-[150px] bg-[url(images/image-header-mobile.jpg)] bg-cover bg-no-repeat bg-[#aa5cdb]">
+      <div id="imagem" class="h-[200px] bg-[url(images/image-header-mobile.jpg)] bg-cover bg-no-repeat bg-[#aa5cdb] lg:float-right lg:w-[50%] lg:h-full">
 
       </div>
-      <div id="conteudo" class="h-[350px] bg-[#1b1938] text-white">
-        <div id="g" class="h-full w-full p-[20px] grid justify-center gap-[10px] text-center">
-          <h1 class="text-[2px]">Get <strong class="text-[#aa5cdb]">insights</strong> that help your business grow.</h1>
-          <p>
+      <div id="conteudo" class="h-[550px] bg-[#1b1938] text-white lg:float-left lg:w-[50%] lg:h-full">
+        <div id="g" class="h-full w-full p-[20px] grid justify-center gap-[10px] text-center lg:flex lg:items-center lg:flex-col lg:bg-red-500">
+          <h1>Get <strong class="text-[#aa5cdb]">insights</strong> that help your business grow.</h1>
+          <p class="text-[#ffffffbf] max-w-[240px]">
             Discover the benefits of data analytics and make better decisions regarding revenue, customer
             experience, and overall efficiency.
           </p>
-          <div id="baixo">
-            <h1>10k+</h1>
-            <p>companies</p>
-            <h1>314</h1>
-            <p>templates</p>
+          <div id="baixo" class="pt-[8px] lg:flex">
+            <div>
+              <h1 class="text-[25px]">10k+</h1>
+              <p class="pb-[20px]">companies</p>
+            </div>
+            
+            <div>
+              <h1 class="text-[25px]">314</h1>
+              <p class="pb-[20px]">templates</p>
+            </div>
           
-            <h1>12m+</h1>
-            <p>queries</p>
+            <div>
+              <h1 class="text-[25px]">12m+</h1>
+              <p>queries</p>
+            </div>
           </div>
         </div>
       </div>
