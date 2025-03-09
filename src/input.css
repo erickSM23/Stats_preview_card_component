@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* :root
+    --cor1: hsl(233, 47%, 7%);
+    --cor2: hsl(244, 38%, 16%);
+    --cor3: hsl(277, 64%, 61%);
+    --cor4: hsla(0, 0%, 100%, 0.75);
+
+    --font_inter: "Inter", sans-serif;
+    --font_deca: "Lexend Deca", sans-serif;
+*/
