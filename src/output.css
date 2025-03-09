@@ -25,6 +25,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --color-segundo: hsl(244, 38%, 16%);
   }
 }
 @layer base {
@@ -423,10 +424,6 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .size-\[15px\] {
-    width: 15px;
-    height: 15px;
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
@@ -1052,9 +1049,6 @@
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
-  .bg-\[var\(--color-teste\)\] {
-    background-color: var(--color-teste);
-  }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
@@ -1066,6 +1060,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-segundo {
+    background-color: var(--color-segundo);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1284,16 +1281,9 @@
   .align-top {
     vertical-align: top;
   }
-  .text-\[15px\] {
-    font-size: 15px;
-  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
-  }
-  .font-\[15px\] {
-    --tw-font-weight: 15px;
-    font-weight: 15px;
   }
   .text-balance {
     text-wrap: balance;
@@ -1810,8 +1800,15 @@
     transform-box: view-box;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 :root {
-  - Very dark blue (main background): hsl(233, 47%, 7%) - Dark desaturated blue (card background): hsl(244, 38%, 16%) - Soft violet (accent): hsl(277, 64%, 61%) ### Neutral - White (main heading, stats): hsl(0, 0%, 100%) - Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75) - Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6);
+  --cor1: hsl(233, 47%, 7%);
+  --cor2: hsl(244, 38%, 16%);
+  --cor3: hsl(277, 64%, 61%);
+  --cor4: hsla(0, 0%, 100%, 0.75);
+  --font_inter: "Inter", sans-serif;
+  --font_deca: "Lexend Deca", sans-serif;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -1911,10 +1908,6 @@
   initial-value: 0;
 }
 @property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
