@@ -8,10 +8,3 @@
     --font_inter: "Inter", sans-serif;
     --font_deca: "Lexend Deca", sans-serif;
 */
-
-div#g > h1 {
-    padding-bottom: 10px;
-
-    font-family: "Lexend Deca";
-    font-size: 23px;
-}
