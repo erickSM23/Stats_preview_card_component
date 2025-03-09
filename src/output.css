@@ -7,6 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -25,7 +26,6 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --color-segundo: hsl(244, 38%, 16%);
   }
 }
 @layer base {
@@ -428,6 +428,18 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-\[150px\] {
+    height: 150px;
+  }
+  .h-\[350px\] {
+    height: 350px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -440,11 +452,20 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-\[250px\] {
+    width: 250px;
+  }
+  .w-full {
+    width: 100%;
   }
   .w-screen {
     width: 100vw;
@@ -835,6 +856,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
   .space-y-reverse {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 1;
@@ -920,6 +944,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .scroll-auto {
     scroll-behavior: auto;
   }
@@ -928,6 +955,9 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-\[5px\] {
+    border-radius: 5px;
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1043,8 +1073,17 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#1b1938\] {
+    background-color: #1b1938;
+  }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#090b1a\] {
+    background-color: #090b1a;
+  }
+  .bg-\[\#aa5cdb\] {
+    background-color: #aa5cdb;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
@@ -1061,8 +1100,8 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
-  .bg-segundo {
-    background-color: var(--color-segundo);
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1075,6 +1114,9 @@
   .bg-radial {
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(images\/image-header-mobile\.jpg\)\] {
+    background-image: url(images/image-header-mobile.jpg);
   }
   .bg-none {
     background-image: none;
@@ -1239,6 +1281,9 @@
   .p-9 {
     padding: calc(var(--spacing) * 9);
   }
+  .p-\[20px\] {
+    padding: 20px;
+  }
   .text-center {
     text-align: center;
   }
@@ -1280,6 +1325,33 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .text-\[2em\] {
+    font-size: 2em;
+  }
+  .text-\[2px\] {
+    font-size: 2px;
+  }
+  .text-\[3em\] {
+    font-size: 3em;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
+  .text-\[35px\] {
+    font-size: 35px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -1357,6 +1429,18 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-\[\#aa5cdb\] {
+    color: #aa5cdb;
+  }
+  .text-\[\]\] {
+    color: ];
+  }
+  .text-\[px\] {
+    color: px;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
@@ -1802,13 +1886,9 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-:root {
-  --cor1: hsl(233, 47%, 7%);
-  --cor2: hsl(244, 38%, 16%);
-  --cor3: hsl(277, 64%, 61%);
-  --cor4: hsla(0, 0%, 100%, 0.75);
-  --font_inter: "Inter", sans-serif;
-  --font_deca: "Lexend Deca", sans-serif;
+div#g > h1 {
+  font-family: "Lexend Deca";
+  font-size: 25px;
 }
 @property --tw-translate-x {
   syntax: "*";
