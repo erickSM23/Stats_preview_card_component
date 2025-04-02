@@ -12,10 +12,12 @@
 <body class="bg-[#090b1a]">
   <main class="bg-[#090b1a] w-screen min-h-screen flex flex-row flex-nowrap justify-center items-center"> 
     <section class="bg-[#1b1938] h-[750px] w-[250px] rounded-[10px] overflow-hidden lg:w-[80vw] lg:h-[400px]">
-
-      <div id="imagem" class="h-[200px] bg-[url(images/image-header-mobile.jpg)] bg-cover bg-no-repeat bg-[#aa5cdb] lg:float-right lg:w-[50%] lg:h-full">
-
+      
+      <div id="imagem" class="h-[200px] lg:float-right lg:w-[50%] lg:h-full relative inline-block">
+        <img src="images/image-header-mobile.jpg" alt="imagem" class="w-full h-full">
+        <div id="overlay" class="absolute h-full w-full top-[0] left-[0] bg-[#833bb19f]"></div>
       </div>
+
       <div id="conteudo" class="h-[550px] bg-[#1b1938] text-white lg:float-left lg:w-[50%] lg:h-full">
         <div id="g" class="h-full w-full p-[20px] grid justify-center gap-[10px] text-center lg:flex lg:items-left lg:flex-col lg:center lg:p-[100px]">
           <h1 class="text-[23px] lg:text-[35px] lg:text-left lg:font-medium lg:leading-[40px] pb-[18px]">Get <strong class="text-[#aa5cdb]">insights</strong> that help your business grow.</h1>
